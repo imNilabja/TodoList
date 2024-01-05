@@ -40,14 +40,14 @@ const page = () => {
   }
   return (
     <>
-      <h1 className='bg-rose-500 text-white p-5 text-xl font-bold text-center mb-10'>TodoList</h1>
+      <h1 className='bg-rose-500 text-white p-5 text-xl font-bold text-center mb-10 w-screen'>TodoList</h1>
       <form onSubmit={submitHandler}>
         <input type='text' className='border-zinc-800 text-2xl border-4 m-5 px-4 py-2 rounded-sm' placeholder='Enter the title' value={title} onChange={(e) => { settitle(e.target.value) }}></input>
         <input type='text' className='border-zinc-800 text-2xl m-5 border-4 px-4 py-2 rounded-sm' placeholder='Enter the description' value={desc} onChange={(e) => { setdesc(e.target.value) }}></input>
         <button className='bg-blue-600 text-white px-4 py-3 rounded-md m-5 font-bold'>ADD TASK</button>
       </form>
 
-      <div className='p-8 bg-slate-200'>
+      <div className='p-8 bg-slate-200 w-screen'>
         <ul>
           {renderTask}
 
